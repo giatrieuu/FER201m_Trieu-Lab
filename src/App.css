@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*css*/
+
+.modal-content {
+  background-color: rgba(255, 165, 0, 0.2); /* Màu cam với độ trong suốt */
+}
+
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 50vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+/* CSS */
+/* Navigation.css */
+
+/* Kích thước và màu sắc của thanh trượt */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hình dạng của nút tròn trượt */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Hình dạng của thanh ngang */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Màu thanh ngang tắt */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px; /* Kích thước của nút tròn trượt */
+}
+
+/* Màu sắc của nút tròn trượt khi bật */
+.slider.round {
+  background-color: #2196F3; /* Màu thanh ngang bật */
+}
+
+/* Trạng thái bật/tắt của nút tròn trượt */
+.slider.round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px; /* Vị trí của nút tròn trượt khi bật */
+  bottom: 4px; /* Vị trí của nút tròn trượt khi bật */
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%; /* Hình dạng của nút tròn trượt */
+}
+
+/* Trạng thái bật của nút tròn trượt */
+input:checked + .slider.round {
+  background-color: #2196F3; /* Màu thanh ngang bật */
+}
+
+/* Trạng thái bật của nút tròn trượt */
+input:checked + .slider.round:before {
+  -webkit-transform: translateX(26px); /* Vị trí của nút tròn trượt khi bật */
+  -ms-transform: translateX(26px); /* Vị trí của nút tròn trượt khi bật */
+  transform: translateX(26px); /* Vị trí của nút tròn trượt khi bật */
+}
+
+/* CSS */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  flex: 0 0 33.33%; /* Chia cột thành 1/3 của hàng */
+  padding: 10px; /* Khoảng cách giữa các cột */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Đảm bảo các cột có cùng chiều cao */
+}
+
+.card-img {
+  flex: 1; /* Để nội dung bên trong căn giữa theo chiều dọc */
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* CSS */
+/* CSS */
+/* CSS */
+.product-tumb .film-image {
+  width: 50%; /* Kích thước hình ảnh chi tiết 50% theo chiều ngang */
+  height: auto; /* Để đảm bảo tỷ lệ khung hình tự điều chỉnh */
+  max-width: 100%; /* Đảm bảo không bị tràn khỏi khung cha */
+  max-height: 100vh; /* Điều chỉnh chiều cao tối đa, ví dụ 50% chiều cao của viewport */
+}
+body {
+  background-color: lightblue; /* Thay đổi màu nền toàn bộ ứng dụng */
+}
+
+.footer {
+  margin: 0px auto;
+  padding: 5px 0px 1px 0px;
+}
+/* CSS */
+.detail-button {
+  background-color: rgb(244, 138, 0);
+  padding: 10px 30px; /* Thay đổi giá trị padding để làm cho nút lớn hơn theo chiều ngang */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Để bo tròn góc nút */
+}
+
+.product-card h4 {
+  font-size: 24px; /* Đổi kích thước tiêu đề thành 24px, bạn có thể thay đổi giá trị này theo ý muốn của mình */
+}
+.badge {
+  font-size: 30px; /* Đổi kích thước chữ trong phần badge thành 24px, bạn có thể thay đổi giá trị này theo ý muốn của mình */
+  color: rgb(255, 255, 255); /* Đặt màu chữ thành màu cam (orange) */
+}
+.product-details p {
+  font-size: 18px; /* Đặt kích thước chữ cho phần tử "info" thành 18px, bạn có thể thay đổi giá trị này theo ý muốn của mình */
+}
+.product-details .info {
+  font-weight: bold; /* Đặt chữ trong phần "info" thành đậm */
+}
